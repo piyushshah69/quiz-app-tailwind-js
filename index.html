@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="w-11/12 max-w-3xl	m-auto mt-6">
+        <div class="bg-slate-950 w-full p-4 flex flex-col items-center gap-5">
+            <h1 class="text-white text-3xl tracking-widest">Quiz App</h1>
+            <div class="w-full flex justify-between">
+                <p class="text-white text-lg">Question <span id="question-number"></span>/10</p>
+                <p class="text-white text-lg">Score <span id="score"></span></p>
+            </div>
+        </div>
+
+        <h2 class="my-6 text-xl" id="question"></h2>
+        <div id="answers" class="flex flex-col gap-4">
+        </div>
+
+        <button class="disabled:opacity-40 mt-6 bg-slate-950 text-white tracking-widest text-lg uppercase py-1.5 w-full" id="btn">Next</button>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>
